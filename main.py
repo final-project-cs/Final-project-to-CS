@@ -11,8 +11,8 @@ keyboard1.row(' Именные номера', ' Блатные номера', ' 
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    bot.send_message(message.from_user.id, " Привет ",
-                                           + message.from_user.first_name)
+    bot.send_message(message.from_user.id, " Привет ")
+
     bot.send_message(message.from_user.id, " Выберите категорию",
                                            reply_markup=keyboard1)
 
